@@ -1,0 +1,37 @@
+﻿@inherits Microsoft.VisualStudio.Web.CodeGeneration.Templating.RazorTemplateBase
+@using System.Collections.Generic
+@using System.Linq
+@{
+    var namespaceSet = new HashSet<string>(
+        new string[]
+        {
+            "Microsoft.AspNetCore.Identity",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+            "Microsoft.EntityFrameworkCore"
+        });
+
+    if (!string.IsNullOrEmpty(Model.UserClassNamespace))
+    {
+        namespaceSet.Add(Model.UserClassNamespace);
+    }
+    foreach (var name in namespaceSet.OrderBy(n => n))
+    {
+@:using @name;
+    }
+}
+
+namespace @(Model.DbContextNamespace);
+
+public class @Model.DbContextClass : IdentityDbContext<@(Model.UserClass)>
+{
+    public @(Model.DbContextClass)(DbContextOptions<@Model.DbContextClass> options)
+        : base(options)
+    {
+    }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+    }
+}
+
