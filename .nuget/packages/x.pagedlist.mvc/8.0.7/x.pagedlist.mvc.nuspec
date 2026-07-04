@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>X.PagedList.Mvc</id>
+    <version>8.0.7</version>
+    <authors>Copyright Troy Goode,Ernado © 2020</authors>
+    <owners>Copyright Troy Goode,Ernado © 2020</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/dncuug/X.PagedList/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/dncuug/X.PagedList</projectUrl>
+    <iconUrl>https://ru.gravatar.com/userimage/8071071/f2dc08ee7e4016451f64a7ae9cffd110.png?size=200</iconUrl>
+    <description>Library for easily paging through any IEnumerable/IQueryable in ASP.NET MVC</description>
+    <repository type="git" url="https://github.com/dncuug/X.PagedList.git" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="X.PagedList.Web.Common" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="X.PagedList" version="8.0.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNet.Mvc" version="5.2.7" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.8" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
