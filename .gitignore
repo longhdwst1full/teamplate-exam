@@ -1,0 +1,34 @@
+﻿## Ignore Visual Studio temporary files, build results, and user-specific files.
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Re]leases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache directory
+.vs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Class Library Project User Extensions
+*.userprefs
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# OS files
+.DS_Store
+Thumbs.db
