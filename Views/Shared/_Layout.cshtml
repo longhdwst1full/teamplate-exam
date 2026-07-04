@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>@ViewData["Title"] - Shoppers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="/fonts/icomoon/style.css" asp-append-version="true">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="/css/magnific-popup.css" asp-append-version="true">
+    <link rel="stylesheet" href="/css/jquery-ui.css" asp-append-version="true">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="/css/aos.css" asp-append-version="true">
+    <link rel="stylesheet" href="/css/style.css" asp-append-version="true">
+    @await RenderSectionAsync("Styles", required: false)
+  </head>
+  <body>
+  <div class="site-wrap">
+    <partial name="_HeaderPartial" />
+
+    @RenderBody()
+
+    <partial name="_FooterPartial" />
+  </div>
+
+  <script src="/js/jquery-3.3.1.min.js" asp-append-version="true"></script>
+  <script src="/js/jquery-ui.js" asp-append-version="true"></script>
+  <script src="/js/popper.min.js" asp-append-version="true"></script>
+  <script src="/js/bootstrap.min.js" asp-append-version="true"></script>
+  <script src="/js/owl.carousel.min.js" asp-append-version="true"></script>
+  <script src="/js/jquery.magnific-popup.min.js" asp-append-version="true"></script>
+  <script src="/js/aos.js" asp-append-version="true"></script>
+  <script src="/js/main.js" asp-append-version="true"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+  </body>
+</html>
