@@ -63,6 +63,26 @@ BỐ CỤC TRANG INDEX (cụ thể — làm đúng như vầy):
 
 THÔNG TIN CỤ THỂ:
 - DB: CSDL_*.sql (nếu CHƯA có file .sql thì hỏi confirm).
-- Template:  (đã chỉ định + đính kèm, KHÔNG hỏi lại).
-- Source làm việc:   (vị trí hiện tại — đã đọc ở LỆNH 1, không cần kéo lại).
+- Template: <template> (đã chỉ định + đính kèm, KHÔNG hỏi lại).
+- Source làm việc: <path> (vị trí hiện tại — đã đọc ở LỆNH 1, không cần kéo lại).
+```
+## LỆNH 3 — THỰC THI (template ĐÃ tích hợp sẵn trong source C#, KHÔNG đính kèm template riêng)
+
+
+> Dùng khi: bạn đã tự chuyển template (html/css/js/images) vào project C# rồi (layout đã có sẵn trong Views/wwwroot). Chỉ việc làm chức năng.
+
+
+```
+Bắt đầu làm. Template ĐÃ được tích hợp sẵn trong source C# (layout/css/js/images đã nằm trong project — KHÔNG có template riêng đính kèm). KHÔNG đi tìm/không hỏi template ngoài.
+
+
+→ Bỏ qua bước "copy tài nguyên từ template". Câu 1 chỉ cần: kiểm tra layout đã tách partial (header/footer) chưa, nếu chưa thì tách; đảm bảo css/js/images đã reference đúng trong wwwroot.
+
+
+Còn lại LÀM Y HỆT LỆNH 2 (từ "BƯỚC 0 — IMPORT DB" trở đi): import DB song song, thứ tự câu 1→5 rồi câu 6, cùng toàn bộ YÊU CẦU ĐỀ + QUY TẮC BẮT BUỘC + BỐ CỤC TRANG INDEX ở LỆNH 2.
+
+
+THÔNG TIN CỤ THỂ:
+- DB: *.sql (nếu CHƯA có thì hỏi confirm).
+- Source làm việc: <path> (template đã ở trong đây — đã đọc ở LỆNH 1).
 ```
